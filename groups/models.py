@@ -11,8 +11,6 @@ from django import template
 register = template.Library()
 
 
-
-
 class Group(models.Model):
     name = models.CharField(max_length = 255,unique=True)
     slug = models.SlugField(allow_unicode=True,unique=True)
